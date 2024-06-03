@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VIESHOW</title>
+    <link rel="stylesheet" href="index2css.css">
+
+</head>
+<body>
+<!-- 頁首 -->
+<header>
+    <div class="header-container">
+        <div class="logo-container">
+            <img src="5.png" alt="VIESHOW Logo"> <!-- 在這裡添加圖片元素 -->
+        </div>
+        <h1>VIESHOW</h1>
+        <nav>
+            <ul>
+                <li><a href="#">首頁</a></li>
+                <li><a href="#">電影</a></li>
+                <li><a href="#">訂票</a></li>
+                <li><a href="#">影城</a></li>
+                <li><a href="#">會員</a></li>
+            </ul>
+            <!-- 新增下拉選單 -->
+            <select id="citySelector">
+                <option value="taipei">台北</option>
+                <option value="taichung">台中</option>
+                <option value="kaohsiung">高雄</option>
+                <option value="tainan">台南</option>
+            </select>
+        </nav>
+    </div>
+</header>
+
+<!-- 主內容區 -->
+<div class="main-container">
+    <!-- 側邊選單 -->
+    <aside class="sidebar">
+        <ul>
+            <li><a href="#">電影介紹</a></li>
+            <li><a href="#">上映中</a></li>
+            <li><a href="#">即將上映</a></li>
+            <li><a href="#">特別放映</a></li>
+        </ul>
+    </aside>
+
+    <!-- 主要內容區 -->
+    <main>
+        <!-- 彈跳視窗內容 -->
+        <div id="myModal1" class="modal">
+            <div class="modal-content">
+                <span class="closeButton">Close</span>
+                <p>此票已售完請更換電影</p>
+            </div>
+        </div>
+        <div class="movie-grid">
+            <div class="movie-item">
+                <img src="1.png" alt="Movie 1">
+                <h3>九龍城寨之圍城</h3>
+                <button class="book-tickket-button" id="notButton1">線上訂票</button>
+            </div>
+            <!-- 彈跳視窗內容 -->
+            <div id="myModal2" class="modal">
+                <div class="modal-content">
+                    <span class="closeButton">Close</span>
+                    <p>此票已售完請更換電影</p>
+                </div>
+            </div>
+            <div class="movie-item">
+                <img src="2.png" alt="Movie 2">
+                <h3>哥吉拉-金剛:新帝國</h3>
+                <button class="book-tickket-button" id="notButton2">線上訂票</button>
+            </div>
+            <!-- 彈跳視窗內容 -->
+            <div id="myModal3" class="modal">
+                <div class="modal-content">
+                    <span class="closeButton">Close</span>
+                    <p>系統維護中請稍後再試</p>
+                </div>
+            </div>
+            <div class="movie-item">
+                <img src="3.png" alt="Movie 3">
+                <h3>罪後真相</h3>
+                <button class="book-tickket-button" id="notButton3">線上訂票</button>
+            </div>
+            <!-- 彈跳視窗內容 -->
+            <div id="myModal4" class="modal">
+                <div class="modal-content">
+                    <span class="closeButton">Close</span>
+                    <p>系統維護中請稍後再試</p>
+                </div>
+            </div>
+            <div class="movie-item">
+                <img src="4.png" alt="Movie 4">
+                <h3>金手指</h3>
+                <button class="book-tickket-button" id="notButton4">線上訂票</button>
+            </div>
+        </div>
+    </main>
+</div>
+
+<!-- 頁尾 -->
+<footer>
+    <div class="footer-container">
+        <p>&copy; 2024 威秀影城. 版權所有.</p>
+    </div>
+</footer>
+
+<script src="sc.js"></script>
+</body>
+</html>

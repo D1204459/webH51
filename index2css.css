@@ -1,0 +1,213 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #3046b7;
+    color: white;
+    padding: 15px 0;
+    height: 120px; /* 調整選單的高度 */
+    margin-right: 10px;
+}
+
+
+
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    margin-right: 20px;
+}
+
+nav ul li {
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+#citySelector {
+    padding: 5px;
+    border-radius: 4px;
+    border: 1px solid #ffffff;
+}
+
+.main-container {
+    display: flex;
+    color: #e40580;
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 0 20px;
+}
+
+.sidebar {
+    width: 200px;
+    background-color: rgba(21, 52, 194, 0.79);
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    margin-left: 10px;
+}
+@media (max-width: 600px) {
+    .sidebar {
+        width: 200px; /* 在螢幕小於 600px 時保持原有的 200px 寬度 */
+
+    }
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.sidebar ul li {
+    margin-bottom: 40px;
+}
+
+.sidebar ul li a {
+    text-decoration: none;
+    color: #c7b045;/*文字顏色*/
+    padding: 10px 15px;
+    display: block;
+    border-radius: 4px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    font-weight: bold;/*設為粗體*/
+    font-size: 25px;
+}
+.sidebar ul li a:hover {
+    background-color: #ffffff;/*選單浮標顏色*/
+    color: #e40580/*選單浮標文字顏色*/
+}
+
+.main-sidebar {
+    width: 200px;
+    background-color: #f9f9f9;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+.main-sidebar ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.main-sidebar ul li {
+    margin-bottom: 20px;
+}
+
+.main-sidebar ul li a {
+    text-decoration: none;
+    color: #333;
+    padding: 10px 15px;
+    display: block;
+    border-radius: 4px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.main-sidebar ul li a:hover {
+    background-color: #007BFF;
+    color: white;
+}
+
+
+main {
+    flex: 1;
+    padding-left: 20px;
+}
+
+.movie-grid {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.movie-item {
+    width: 200px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+}
+
+.movie-item img {
+    width: 100%;
+}
+
+footer {
+    background-color: #1e35a8;
+    color: #ffffff;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    height: 40px; /* 調整選單的高度 */
+}
+.book-tickket-button {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: #007BFF;
+    color: #c7b045;
+    border: none;
+    border-radius: 5px;
+    transition: background-color 0.3s, transform 0.3s;
+    font-weight: bold;/*設為粗體*/
+}
+
+.book-tickket-button:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
+}
+
+.book-tickket-button:active {
+    background-color: #003d80;
+}
+
+/* 彈跳視窗樣式 */
+.modal {
+    display: none; /* 預設隱藏 */
+    position: fixed; /* 固定定位 */
+    z-index: 1; /* 位於所有其他元素之上 */
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.5); /* 半透明黑色背景 */
+}
+
+.modal-content {
+    background-color: #4156c0; /* 白色內容背景 */
+    color: #c7b045;
+    margin: 15% auto; /* 居中對齊 */
+    padding: 20px;
+    border: 1px solid rgba(196, 12, 12, 0.98);
+    width: 80%;
+    max-width: 600px; /* 最大寬度 */
+}
+
+
+
+
+
+
